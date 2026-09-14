@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(254, 248, 228);
+            font-family: Arial, sans-serif;
+            font-size: 16px;   
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(61, 44, 44); 
+            margin-top: 20px;
+        }
+        ul li{
+            margin: 0px 10px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 5px 6px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        ul li a:hover{
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border-radius: 5px;
+        }
+        #apply-now{
+            background-color: rgb(255, 0, 0);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        #apply-now:hover{
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            text-decoration: none;
+            text-shadow: none;
+        }
+    </style>    
+</head>
+<body>
+    <ul>
+        <li id = "apply-now"><a href="https://www.kiet.edu/admissions/closed/" target="_blank">Apply Now!</a></li>
+        <li><a href="webPage.html" target="_blank">Home</a></li>
+        <li><a href="list.html" class="active" target="_blank">About</a></li>
+        <li><a href="layout.html" target="_blank">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+</body>
+</html>
