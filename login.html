@@ -1,80 +1,265 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+
+    <title>Student Login</title>
+
     <style>
-        *,
-        html,
-        body {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            background-color: rgb(250, 216, 223);
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            background: linear-gradient(135deg, #fad8df, #fff0f2);
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f5f8;
+            color: #333;
+            min-height: 100vh;
         }
+        /* Header */
+        header {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 14px;
+            color: #dbe5f1;
+        }
+        /* Navigation */
+        nav {
+            background-color: white;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #17365d;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+        nav ul li a:hover {
+            background-color: #e8eef5;
+            border-radius: 5px;
+        }
+
+        /* Login Container */
+
+        .login-container {
+            width: 90%;
+            max-width: 420px;
+            margin: 50px auto;
+        }
+
+        /* Login Form */
 
         form {
-            width: 300px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgb(255, 179, 179);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
         }
-
-        h1 {
+        form h2 {
             text-align: center;
-            margin-bottom: 20px;
-            text-decoration: underline;
+            color: #17365d;
+            margin-bottom: 8px;
         }
+        .login-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        /* Labels */
 
         label {
             display: block;
-            margin-bottom: 5px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #444;
+            font-size: 14px;
         }
 
-        input[type="text"],
-        input[type="password"] {
+        /* Input Fields */
+
+        input {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
+            padding: 11px 12px;
+            margin-bottom: 18px;
+            border: 1px solid #b8c2cc;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            font-size: 14px;
         }
+
+        input:focus {
+            outline: none;
+            border-color: #17365d;
+            box-shadow: 0 0 0 2px rgba(23, 54, 93, 0.1);
+        }
+
+        /* Login Button */
 
         button {
             width: 100%;
-            padding: 10px;
-            background-color: rgb(67, 146, 60);
+            padding: 11px;
+            background-color: #17365d;
             color: white;
             border: none;
             border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
             cursor: pointer;
         }
-
         button:hover {
-            background-color: rgb(50, 120, 50);
+            background-color: #0f2744;
+        }
+
+        /* Registration Link */
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .register-link a {
+            color: #17365d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 650px) {
+
+            nav ul {
+                gap: 10px;
+            }
+
+            .login-container {
+                margin-top: 30px;
+            }
+
+            form {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <form>
-        <h1>Log In</h1>
-        <label title="Enter your username" for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
 
-        <label title="Enter your password" for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+    <!-- Header -->
 
-        <button type="submit">Log In</button>
-    </form>
-    
+    <header>
+        <h1>Student Registration Portal</h1>
+        <p>Student Login</p>
+    </header>
+    <!-- Navigation -->
+
+    <nav>
+        <ul>
+
+            <li>
+                <a href="registrationForm2.html">Register</a>
+            </li>
+
+            <li>
+                <a href="login.html">Log In</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Login Form -->
+
+    <div class="login-container">
+
+        <form>
+
+            <h2>Student Login</h2>
+
+            <p class="login-subtitle">
+                Sign in to access your student account
+            </p>
+
+
+            <!-- Email -->
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required>
+
+
+            <!-- Password -->
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required>
+
+            <!-- Login Button -->
+
+            <button type="submit">
+                Log In
+            </button>
+
+            <!-- Registration Link -->
+
+            <p class="register-link">
+                Don't have an account?
+                <a href="registrationForm2.html">
+                    Register here
+                </a>
+            </p>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Student Registration Portal | All Rights Reserved
+    </footer>
 </body>
 </html>
