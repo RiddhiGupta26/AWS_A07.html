@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #171716;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    background-color: #0d0d0c;
+    color: #b8b8b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 7%;
+    font-size: 11px;
+    border-bottom: 1px solid #333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    height: 75px;
+    background-color: #171716;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    gap: 40px;
+    border-bottom: 1px solid #292929;
+}
+
+/* LOGO */
+.logo {
+    color: #e9a15b;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+    width: 180px;
+}
+
+.logo span {
+    display: block;
+    color: #aaaaaa;
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-align: center;
+    margin-top: -4px;
+}
+
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 13px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #e99a4c;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+    text-decoration: none;
+    background-color: #e78d42;
+    color: white;
+    padding: 12px 18px;
+    font-size: 11px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.book-btn:hover {
+    background-color: #c96d28;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    height: 570px;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.48),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("Image/BackgroundImg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 11%;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+.small-title {
+    color: #fcebeb;
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 48px;
+    line-height: 1.15;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #f9e6e6;
+    line-height: 1.7;
+    font-size: 14px;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+/* ORANGE BUTTON */
+.orange-btn {
+    /* display: inline-block; */
+    background-color: #e78d42;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    font-size: 11px;
+    transition: 0.3s;
+}
+.orange-btn:hover {
+    background-color: #bd6727;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    text-align: center;
+    padding: 70px 20% 40px;
+    background-color: #1b1b1a;
+}
+
+.section-small {
+    color: #d88a4b;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.intro h2,
+.menu-section h2,
+.special-section h2,
+.reservation h2 {
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-style: italic;
+
+    font-size: 35px;
+
+    margin-bottom: 18px;
+}
+
+.intro-text {
+    color: #aaa;
+    line-height: 1.7;
+    font-size: 13px;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 8% 70px;
+    background-color: #1b1b1a;
+}
+.feature-card {
+    width: 30%;
+    background-color: #20201f;
+    text-align: center;
+    padding: 30px 25px;
+    border: 1px solid #292929;
+}
+.circle {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #d98645;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e49555;
+    margin: 0 auto 18px;
+}
+
+.feature-card h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin-bottom: 12px;
+}
+.feature-card p {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-section {
+    background-color: #151514;
+    text-align: center;
+    padding: 75px 8%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.food-card {
+    width: 30%;
+    background-color: #20201f;
+    text-align: left;
+}
+
+.food-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-info {
+    padding: 20px;
+}
+.food-info h3 {
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+.food-info p {
+
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+.price {
+    color: #e3934c;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+
+/* OUTLINE BUTTON */
+
+.outline-btn {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid #c77c3e;
+
+    padding: 12px 25px;
+
+    font-size: 11px;
+}
+
+
+.outline-btn:hover {
+
+    background-color: #d47e35;
+}
+
+
+/* =========================
+   SPECIAL SECTION
+========================= */
+
+.special-section {
+
+    display: flex;
+
+    gap: 25px;
+
+    padding: 80px 11%;
+
+    background-color: #1a1a18;
+}
+
+
+.special-text {
+
+    width: 33%;
+
+    background-color: #222220;
+
+    padding: 45px 35px;
+}
+
+
+.special-text h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+.special-text p:not(.section-small) {
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+.special-card {
+
+    width: 30%;
+
+    text-align: center;
+
+    background-color: #1f1f1d;
+
+    padding-bottom: 20px;
+}
+
+
+.special-card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+
+.special-card h3 {
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-style: italic;
+
+    margin-top: 18px;
+}
+
+
+.special-card p {
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin: 8px;
+}
+.special-card span {
+
+    color: #e49450;
+}
+
+
+/* =========================
+   RESERVATION
+========================= */
+
+.reservation {
+
+    text-align: center;
+
+    padding: 80px 20%;
+
+    background-color: #151514;
+}
+
+
+.reservation p:not(.section-small) {
+
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 9%;
+    background-color: #0e0e0d;
+    border-top: 1px solid #292929;
+}
+.footer-column {
+    width: 23%;
+}
+.footer-column h3 {
+    color: #df8b48;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer-column p {
+    color: #888;
+    font-size: 11px;
+    line-height: 1.8;
+}
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.footer-column a:hover {
+    color: #df8b48;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+
+    background-color: #090909;
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #666;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        height: auto;
+
+        padding: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        gap: 15px;
+
+        margin-left: 0;
+
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding-left: 7%;
+    }
+
+    .features,
+    .menu-container,
+    .special-section {
+        flex-wrap: wrap;
+    }
+
+    .feature-card,
+    .food-card,
+    .special-card,
+    .special-text {
+        width: 45%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero {
+        height: 500px;
+
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .features,
+    .menu-container,
+    .special-section {
+        flex-direction: column;
+    }
+
+    .feature-card,
+    .food-card,
+    .special-card,
+    .special-text {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
